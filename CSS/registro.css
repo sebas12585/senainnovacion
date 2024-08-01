@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #66cee0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    border-radius: 5px;
+    background-color: #66cee0;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f5f5;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 10px;
+}
+
+main {
+    background-image: url('../images/smarthome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el main tenga al menos la altura de la ventana */
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco semi-transparente */
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form label:first-of-type {
+    padding-top: 40px;
+    margin-top: 0;
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 40px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    background-color: #66cee0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #4ca2bb;
+}
+
+footer {
+    background-color: #66cee0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
